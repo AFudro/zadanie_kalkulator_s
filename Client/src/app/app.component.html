@@ -1,0 +1,26 @@
+<div class="all">
+  <div *ngIf="errorMessage" class="result">
+    Błąd
+  </div>
+  <div *ngIf="resultControl" class="result">
+    {{sentAmount}} {{sentCurrency}} brutto dziennie = {{result}} PLN netto miesięcznie
+  </div>
+
+  <form #currencyForm="ngForm" (ngSubmit)="onSubmit()">
+    <select [(ngModel)]="selected" name="currency" required>
+      <option *ngFor="let x of currencies" [ngValue]="x">{{x.country}}</option>
+    </select>
+    <label>Dzienna stawka brutto :
+      <input type="number" name="amount" [(ngModel)]="amount" required>
+    </label>
+
+    <div *ngIf="selected" class="currency">
+      {{selected.currency}}
+    </div>
+    <div class="center-button">
+      <button type="submit" [disabled]="currencyForm.invalid">
+        Oblicz
+      </button>
+    </div>
+  </form>
+</div>

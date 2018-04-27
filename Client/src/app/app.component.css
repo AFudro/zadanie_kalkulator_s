@@ -1,0 +1,75 @@
+input[type=number] {
+    background-color: rgb(187, 221, 209);
+    height: 37px;
+    width: 28%;
+    color: white;
+    font-size: 25px;
+
+}
+
+select {
+    width: 28%;
+    height: 37px;
+    background: none;
+    border: #c1c1c1 solid 1px;
+    font-size: 16px;
+  }
+
+.all{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 500px;
+    height: 300px;
+}
+
+.currency{
+    display: inline-block;
+}
+
+.result {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+form {
+padding: 5px 10px;
+text-decoration: none;
+margin-top: 10px;
+display: inline-block;
+background-color: #eee;
+border-radius: 4px;
+}
+
+.center-button{
+    text-align: center;
+    vertical-align: middle;
+}
+
+button {
+    padding: 8px 16x;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid rgb(0, 0, 0);
+}
+
+button:disabled,
+button[disabled]{
+  border: 2px solid #999999;
+  background-color: #cccccc;
+  cursor: default;
+  color: #666666;
+}
