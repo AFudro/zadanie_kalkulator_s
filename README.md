@@ -2,4 +2,4 @@ Zadanie wykonane na potrzeby procesu rekrutacyjnego. Aplikacja ma za zadanie wyl
 
 Do działania aplikacji wymagane jest najpierw uruchomienie serwera. Należy przejść do folderu: "zadanie_kalkulator_s\rest-service" i wywołać polecenie "java -jar .\rest-service-0.0.1-SNAPSHOT.jar".
 
-Następnie należy przejść do folderu "zadanie_kalkulator_s\Client". Jeśli angular nie został wcześniej zainstalowany to należy to zrobić przez polecenie "npm install -g @angular/cli". Następnie by uruchomić warstwę klienta należy wywołać komendę "ng serve --open". Powinna ona uruchomić przeglądarkę na "http://localhost:4200/". 
+Następnie należy przejść do folderu "zadanie_kalkulator_s\Client" i wywołać polecenie "npm install", a po jego wykonaniu "ng serve --open". Powinno to uruchomić przeglądarkę na "http://localhost:4200/" z działającą już aplikacją.
